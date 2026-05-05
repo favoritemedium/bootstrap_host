@@ -269,8 +269,8 @@ if ! grep -q "^Include /etc/ssh/sshd_config.d" "$SSHD_CONF"; then
 fi
 
 if sshd -t 2>/dev/null; then
-  systemctl enable sshd
-  systemctl restart sshd
+  systemctl enable ssh #sshd
+  systemctl restart ssh #sshd
   success "sshd enabled and restarted — now listening on port $SSH_PORT."
 else
   warn "sshd config validation failed. Reverting drop-in."
