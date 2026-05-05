@@ -36,7 +36,7 @@ clear
 echo -e "${BOLD}${CYAN}"
 cat <<'EOF'
   ╔════════════════════════════════════════════════════╗
-  ║     VPS First-Login & Hardening Script             ║
+  ║     First-Login & Hardening Script                 ║
   ║     Debian 12 — Provider Agnostic                  ║
   ╚════════════════════════════════════════════════════╝
 EOF
